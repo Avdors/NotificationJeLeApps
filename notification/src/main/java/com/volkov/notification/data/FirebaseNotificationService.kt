@@ -11,7 +11,6 @@ import com.volkov.notification.R
 const val CHANNEL_lID = "channel1"
 
 class FirebaseNotificationService : FirebaseMessagingService() {
-
     override fun onNewToken(token: String) {
         super.onNewToken(token)
         // Здесь вы можете отправить токен на сервер или сохранить его в SharedPreferences

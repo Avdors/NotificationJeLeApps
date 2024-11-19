@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">NotificationJeLeApps</string>
+    <string name="channel_name">Notification Channel</string>
+    <string name="channel_description">Notification from firebase</string>
+    <string name="firebase_token">Your Firebase Token:</string>
 </resources>
