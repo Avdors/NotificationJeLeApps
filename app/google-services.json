@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "2046566378",
+    "project_id": "testfire-42782",
+    "storage_bucket": "testfire-42782.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2046566378:android:68fec3def9135af7a45c93",
+        "android_client_info": {
+          "package_name": "com.volkov.notificationjeleapps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz3NKpP9hyldS7oJ1QdzRtxY2SGijDhzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2046566378:android:750c952cb854e387a45c93",
+        "android_client_info": {
+          "package_name": "com.volkov.testfi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz3NKpP9hyldS7oJ1QdzRtxY2SGijDhzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2046566378:android:3c7fb06c2400272ea45c93",
+        "android_client_info": {
+          "package_name": "com.volkov.testfire"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz3NKpP9hyldS7oJ1QdzRtxY2SGijDhzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
