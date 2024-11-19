@@ -11,4 +11,10 @@ class NotificationRepository(private val context: Context) {
     emit(FirebaseMessaging.getInstance().token.await())
 }
 
+    fun getSavedToken(): Flow<String> = flow {
+        val sharedPreferences = context.getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+        val token = sharedPreferences.getString("firebaseToken", "Token is unavailable")
+        emit(token ?: "Token is unavailable")
+    }
+
 }

@@ -1,3 +1,5 @@
+
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -6,6 +8,20 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("E:\\JobAndroid\\MyKey\\keyandroid.jks")
+            storePassword = "Ybrjkm"
+            keyAlias = "key0"
+            keyPassword = "Ybrjkm"
+        }
+        create("release") {
+            storeFile = file("E:\\JobAndroid\\MyKey\\keyandroid.jks")
+            storePassword = "Ybrjkm"
+            keyAlias = "key0"
+            keyPassword = "Ybrjkm"
+        }
+    }
     namespace = "com.volkov.notificationjeleapps"
     compileSdk = 34
 
@@ -19,15 +35,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
@@ -38,6 +46,8 @@ android {
     buildFeatures {
         compose = true
     }
+
+
 }
 
 dependencies {

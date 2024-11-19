@@ -1,5 +1,6 @@
 package com.volkov.notification.data
 
+import android.content.Context
 import android.content.Intent
 import android.provider.Settings
 import androidx.core.app.NotificationCompat
@@ -13,7 +14,13 @@ const val CHANNEL_lID = "channel1"
 class FirebaseNotificationService : FirebaseMessagingService() {
     override fun onNewToken(token: String) {
         super.onNewToken(token)
-        // Здесь вы можете отправить токен на сервер или сохранить его в SharedPreferences
+        saveToken(token)
+    }
+
+
+    private fun saveToken(token: String) {
+        val sharedPreferences = getSharedPreferences("AppPrefs", Context.MODE_PRIVATE)
+        sharedPreferences.edit().putString("firebaseToken", token).apply()
     }
 
     override fun onMessageReceived(message: RemoteMessage) {
