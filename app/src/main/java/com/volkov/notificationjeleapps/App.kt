@@ -21,7 +21,7 @@ class App : Application()  {
             androidContext(this@App)
             modules(notificationModule)
         }
-        createNotificationChannel()  // Не забудьте вызвать этот метод
+        createNotificationChannel()
         Log.d("App", "Koin инициализирован")
     }
 
